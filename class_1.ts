@@ -3,6 +3,7 @@ function aa(){
     /**定义基础数据类型 */
     let web: string="hello world";
     let web1: number=1;
+    
     let web2: boolean=false;
     
     // 也可以自定义一个静态类型
@@ -29,6 +30,7 @@ function aa(){
     let obj:Person = new Person();
     
     // 函数
+   
     // 1.需要返回值是基本类型 - 以字符串类型为例
     let fun = ()=>string=>{
         return 1;
@@ -52,6 +54,9 @@ function aa(){
     function testFn1({one,two}:{one:number,two:number}):number{
         return one+two;
     }
+    let afn = ({one,two}:{one:number,two:number}):number =>{
+        return one+two;
+    }
     // 5.函数中的参数 - 参数是对象,对象只有一个值
     function testFn2({one}:{one:number}):number{
         return one;
@@ -63,3 +68,4 @@ function aa(){
     console.log(funObj())
 }
 aa();
+
